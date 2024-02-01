@@ -25,7 +25,10 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /init.recovery.touch.rc
+#vivo dash add for init.recovery.touch.rc begin
+#on boot
+#    start vts_app_recovery
+#vivo dash add for init.recovery.touch.rc end
 
 on fs
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw 
@@ -124,3 +127,5 @@ on property:vendor.sys.listeners.registered=true
     start keymaster-4-0
     start gatekeeper-1-0
     start servicemanager
+
+import /init.recovery.touch.rc
