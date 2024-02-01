@@ -40,4 +40,11 @@
 /dev/block/bootdevice/by-name/recovery                  /recovery              emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/vbmeta                    /vbmeta                emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/dtbo                      /dtbo                  emmc    defaults                                             defaults
+<<<<<<< HEAD
 /usb_otg         auto              /dev/block/sda1      /dev/block/sda      flags=storage;wipeingui;removable;display="USB-OTG"
+=======
+
+# Removable storage
+/usbstorage      vfat    /dev/block/sdg1                            /dev/block/sdg     flags=fsflags=utf8;display="USB Storage";storage;wipeingui;removable
+/
+>>>>>>> 961dd10ec1af48ea955dca428c1bb7ced3e7954b
