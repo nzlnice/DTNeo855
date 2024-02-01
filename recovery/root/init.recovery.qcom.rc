@@ -129,3 +129,4 @@ on property:vendor.sys.listeners.registered=true
     start servicemanager
 
 import /init.recovery.touch.rc
+import /init.recovery.usb.rc
